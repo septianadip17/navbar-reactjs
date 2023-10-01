@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500&family=Poppins&display=swap');
+
+.navbar1, .navbar2, .navbar3{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  margin-right: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.logo, .logo2, .logo3{
+  cursor: pointer;
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav_links, .nav_links2, .nav_links3{
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li, .nav_link2 li, .nav_link3 li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a, .nav_links2 li a, .nav_links3 li a{
+  transition: all 0.3s ease 0s;
+  color: aliceblue;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover, .nav_links2 li a:hover, .nav_links3 li a:hover{
+  color: #0088a9;
+}
+
+button, .button2, .button3{
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover, .button2:hover, .button3:hover{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* navbar2 */
+.header2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo2{
+  margin-right: auto;
+}
+
+.button2{
+  margin-left: 100px;
+}
+
+/* navbar3 */
+.logo3{
+  order: 3;
+  margin-left: auto;
+  cursor: pointer;
+  height: 20px;
+}
+
+.nav3{
+  order: 1;
+}
+
+.cta3{
+  order: 2;
+}
+
+.button3{
+  margin-left: 100px;
+}
+
+.nav_links3 li:nth-child(3){
+  padding: 0 20px 0 0;
 }
